@@ -1,11 +1,12 @@
-#include <QApplication>
-#include "mainwidget.hpp"
+#include "./Menu/menuController.hpp"
 
-int main(int argc, char *argv[]) {
-    QApplication app(argc, argv);
+int main() {
+    sf::RenderWindow window(sf::VideoMode(800, 700), "Maze Game");
+    MenuController menuController(window);
 
-    MainWidget mainWidget;
-    mainWidget.show();
+    while (window.isOpen()) {
+        menuController.execute();
+    }
 
-    return app.exec();
+    return 0;
 }

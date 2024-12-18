@@ -1,7 +1,6 @@
 #include "player.hpp"
-#include "maze.hpp"
 
-Player::Player(int startX, int startY) : x(startX), y(startY) {}
+Player::Player(int startX, int startY) : x(startX), y(startY) {  }
 
 void Player::move(int dx, int dy, const Maze& maze) {
     int newX = x + dx;
@@ -23,3 +22,4 @@ int Player::getX() const {
 int Player::getY() const {
     return y;
 }
+
