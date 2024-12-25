@@ -16,6 +16,7 @@ private:
     
     sf::Font font;
     sf::Text timerText;
+    
 };
 
 

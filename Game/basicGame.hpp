@@ -12,7 +12,7 @@ public:
     bool isGameOver() const;
     const Maze &getMaze() const;
     const Player &getPlayer() const;
-    void nextLevel();  // Method to go to the next level
+    void nextLevel();  
 
     void setGameOver(bool b);
     int getLevel() const;

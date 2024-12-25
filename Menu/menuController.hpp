@@ -6,10 +6,10 @@
 #include "../Game/basicGameController.hpp"
 #include "../Game/timerGameController.hpp"
 
-class MenuController {
+class MenuController : public AbstractController {
 public:
     explicit MenuController(sf::RenderWindow &win);
-    void execute();
+    void execute() override;
 
 private:
     sf::RenderWindow &window;

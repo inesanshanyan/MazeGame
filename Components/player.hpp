@@ -4,8 +4,6 @@
 
 #include "maze.hpp"
 
-//class Maze;
-
 class Player {
 public:
     Player(int startX, int startY);
